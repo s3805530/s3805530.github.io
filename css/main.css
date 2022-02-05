@@ -1096,10 +1096,11 @@ header .row {
 header .top-bar {
 	display: block;
 	background: #000000;
-	min-width: 220px;
+	/* min-width: 220px; */
+	width:auto;
 	min-height: 66px;
-	position: absolute;
-	left: 90px;
+	position: fixed;
+	left: 0;
 	top: 0;
 }
 header .logo {
@@ -1265,7 +1266,7 @@ header .logo a {
  * header styles
  * --------------------------------------------------------------- 
  */
-@media only screen and (max-width:1024px) {
+/* @media only screen and (max-width:1024px) {
 	header .top-bar {
 		left: 60px;
 	}
@@ -1284,7 +1285,7 @@ header .logo a {
 	header .top-bar {
 		left: 25px;
 	}
-}
+} */
 
 
 /** 
@@ -2511,7 +2512,7 @@ footer .footer-social {
 	display: inline-block;
 	font-size: 2.1rem;
 	margin: 0;
-	padding: 0;
+	padding: 10px;
 	position: relative;
 	top: -.3rem;
 }
@@ -2525,6 +2526,7 @@ footer .footer-social li a {
 }
 footer .copyright span {
 	display: inline-block;
+	padding: 10px;
 }
 footer .copyright span::after {
 	content: "|";
